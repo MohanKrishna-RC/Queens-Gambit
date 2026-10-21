@@ -2,7 +2,7 @@
 
 A lightweight chess game for your browser. Play against the computer or share the board with a friend, choose a time control, and make the board your own with six themes.
 
-![Queen's Gambit game preview](screenshots/chess-game.svg)
+![Queen's Gambit game preview](screenshots/chess-game.png)
 
 ## Get the extension
 
