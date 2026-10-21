@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chess</title>
+  <link rel="stylesheet" href="game.css">
+</head>
+<body>
+  <main class="app">
+    <div id="board-wrap">
+      <div id="board"></div>
+      <svg id="arrows" viewBox="0 0 8 8"></svg>
+    </div>
+
+    <aside class="panel">
+      <div class="status-row">
+        <span id="turn-dot" class="dot w" aria-hidden="true"></span>
+        <span id="status">White to move</span>
+      </div>
+
+      <div class="player-card">
+        <div class="avatar b" id="avatar-b" aria-hidden="true"></div>
+        <div class="player-info">
+          <div class="player-name">Black <span id="tag-b" class="player-tag">computer</span></div>
+          <div id="captured-white" class="pieces b" title="Pieces captured by Black"></div>
+        </div>
+        <div id="clock-b-chip" class="clock-chip off"><span class="dot b"></span><span id="clock-b">--:--</span></div>
+      </div>
+
+      <div class="moves-head">Moves <span class="moves-hint">click a move to replay</span></div>
+      <div id="move-list"></div>
+
+      <div class="player-card">
+        <div class="avatar w" id="avatar-w" aria-hidden="true"></div>
+        <div class="player-info">
+          <div class="player-name">White <span id="tag-w" class="player-tag">you</span></div>
+          <div id="captured-black" class="pieces w" title="Pieces captured by White"></div>
+        </div>
+        <div id="clock-w-chip" class="clock-chip off"><span class="dot w"></span><span id="clock-w">--:--</span></div>
+      </div>
+
+      <div class="controls">
+        <div class="field-row">
+          <label class="field">
+            <span class="field-label">Mode</span>
+            <select id="mode-sel">
+              <option value="ai">Play vs Computer</option>
+              <option value="pvp">Two players</option>
+            </select>
+          </label>
+          <label class="field">
+            <span class="field-label">Time control</span>
+            <select id="clock-sel">
+              <option value="none" selected>Unlimited</option>
+              <option value="1+0">1 min + 0s</option>
+              <option value="3+2">3 min + 2s</option>
+              <option value="5+0">5 min + 0s</option>
+              <option value="10+0">10 min + 0s</option>
+            </select>
+          </label>
+        </div>
+        <div class="field-row">
+          <label class="field">
+            <span class="field-label">Board theme</span>
+            <select id="theme-sel">
+              <option value="brown" selected>Brown</option>
+              <option value="green">Green</option>
+              <option value="blue">Blue</option>
+              <option value="gray">Gray</option>
+              <option value="purple">Purple</option>
+              <option value="walnut">Walnut</option>
+            </select>
+          </label>
+          <label class="field" id="level-wrap">
+            <span class="field-label">Computer level</span>
+            <select id="level-sel">
+              <option value="easy">Easy</option>
+              <option value="normal" selected>Normal</option>
+              <option value="hard">Hard</option>
+            </select>
+          </label>
+        </div>
+        <div class="toggle-row">
+          <button id="btn-sound" type="button" class="toggle-btn" aria-pressed="true" title="Toggle sound">Sound: On</button>
+          <button id="btn-hint" type="button" class="toggle-btn" title="Show best move (H)">Hint</button>
+          <button id="btn-pgn" type="button" class="toggle-btn" title="Copy game as PGN (C)">PGN</button>
+        </div>
+        <div class="btn-row">
+          <button id="btn-new" type="button">New game</button>
+          <button id="btn-undo" type="button">Undo</button>
+          <button id="btn-flip" type="button">Flip</button>
+        </div>
+        <div class="btn-row">
+          <button id="btn-resign" type="button">Resign</button>
+          <button id="btn-draw" type="button">Offer draw</button>
+        </div>
+      </div>
+    </aside>
+  </main>
+
+  <div id="promo-overlay" class="overlay hidden">
+    <div class="dialog">
+      <p>Choose a promotion piece</p>
+      <div class="promo-row"></div>
+      <button class="promo-close link-btn" type="button">Cancel</button>
+    </div>
+  </div>
+
+  <dialog id="gameover-overlay">
+    <div class="gameover-card">
+      <div id="gameover-icon" class="go-icon" aria-hidden="true"></div>
+      <h2 id="gameover-text">Game over</h2>
+      <p id="gameover-sub"></p>
+      <div class="btn-row center">
+        <button id="gameover-new" type="button">New game</button>
+        <button class="gameover-close link-btn" type="button">View board</button>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="chess-engine.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
