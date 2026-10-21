@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="810" viewBox="0 0 1200 810" role="img" aria-labelledby="title desc">
+  <title id="title">Queen's Gambit chess game preview</title>
+  <desc id="desc">A forest green chess game screen with an ivory and sage board, player cards, move history, and game controls.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#15231a"/><stop offset="1" stop-color="#0d1511"/></linearGradient>
+    <linearGradient id="gold" x2="1" y2="1"><stop stop-color="#f0d796"/><stop offset="1" stop-color="#c99d52"/></linearGradient>
+    <linearGradient id="panel" x2="0.9" y2="1"><stop stop-color="#243229"/><stop offset="1" stop-color="#18221b"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#000" flood-opacity=".36"/></filter>
+    <pattern id="board" width="160" height="160" patternUnits="userSpaceOnUse">
+      <rect width="160" height="160" fill="#eee2c9"/>
+      <rect x="80" width="80" height="80" fill="#718d75"/>
+      <rect y="80" width="80" height="80" fill="#718d75"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="810" rx="28" fill="url(#bg)"/>
+  <circle cx="80" cy="50" r="220" fill="#718d75" opacity=".08"/>
+  <circle cx="1160" cy="720" r="250" fill="#d2ac66" opacity=".045"/>
+
+  <g font-family="Inter, Segoe UI, Arial, sans-serif">
+    <rect x="56" y="34" width="48" height="48" rx="15" fill="url(#gold)"/>
+    <path d="m69 66-2-20 9 7 6-13 7 13 9-7-3 20H69Zm1 4h25" fill="#1c211b" stroke="#1c211b" stroke-width="2" stroke-linejoin="round"/>
+    <text x="118" y="51" fill="#e2bf78" font-size="9" font-weight="800" letter-spacing="2.3">PLAY BEAUTIFULLY</text>
+    <text x="118" y="73" fill="#f2eee5" font-family="Georgia, serif" font-size="22">Queen's Gambit</text>
+    <circle cx="1085" cy="58" r="4" fill="#a7c982"/>
+    <text x="1098" y="62" fill="#a5aea4" font-size="12">Your board is ready</text>
+
+    <text x="58" y="123" fill="#e2bf78" font-size="9" font-weight="800" letter-spacing="2">THE GAME IS YOURS</text>
+    <text x="58" y="158" fill="#f2eee5" font-family="Georgia, serif" font-size="32">Make your move.</text>
+    <rect x="568" y="132" width="111" height="26" rx="13" fill="#26372c" stroke="#50664d"/>
+    <circle cx="584" cy="145" r="3" fill="#a7c982"/>
+    <text x="594" y="149" fill="#d8e5ce" font-size="10" font-weight="700">Live match</text>
+
+    <g filter="url(#shadow)">
+      <rect x="56" y="176" width="632" height="632" rx="20" fill="#101712" stroke="#59634e"/>
+      <rect x="62" y="182" width="620" height="620" rx="12" fill="url(#board)"/>
+      <g clip-path="url(#clip)"/>
+    </g>
+  </g>
+
+  <defs><clipPath id="clip"><rect x="62" y="182" width="620" height="620" rx="12"/></clipPath></defs>
+  <g font-family="Georgia, 'DejaVu Sans', serif" font-size="62" text-anchor="middle" dominant-baseline="central" filter="url(#pieceShadow)">
+    <g fill="#283029" stroke="#fff8e9" stroke-width=".7" paint-order="stroke">
+      <text x="100.75" y="221">♜</text><text x="178.25" y="221">♞</text><text x="255.75" y="221">♝</text><text x="333.25" y="221">♛</text><text x="410.75" y="221">♚</text><text x="488.25" y="221">♝</text><text x="565.75" y="221">♞</text><text x="643.25" y="221">♜</text>
+      <text x="100.75" y="298.5">♟</text><text x="178.25" y="298.5">♟</text><text x="255.75" y="298.5">♟</text><text x="333.25" y="298.5">♟</text><text x="410.75" y="298.5">♟</text><text x="488.25" y="298.5">♟</text><text x="565.75" y="298.5">♟</text><text x="643.25" y="298.5">♟</text>
+    </g>
+    <g fill="#fffdf5" stroke="#43513f" stroke-width="1" paint-order="stroke">
+      <text x="100.75" y="686.5">♙</text><text x="178.25" y="686.5">♙</text><text x="255.75" y="686.5">♙</text><text x="333.25" y="686.5">♙</text><text x="410.75" y="686.5">♙</text><text x="488.25" y="686.5">♙</text><text x="565.75" y="686.5">♙</text><text x="643.25" y="686.5">♙</text>
+      <text x="100.75" y="764">♖</text><text x="178.25" y="764">♘</text><text x="255.75" y="764">♗</text><text x="333.25" y="764">♕</text><text x="410.75" y="764">♔</text><text x="488.25" y="764">♗</text><text x="565.75" y="764">♘</text><text x="643.25" y="764">♖</text>
+    </g>
+  </g>
+  <filter id="pieceShadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="2" stdDeviation="1.5" flood-color="#152019" flood-opacity=".38"/></filter>
+  <g font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" opacity=".76">
+    <g fill="#62725f"><text x="67" y="254">8</text><text x="67" y="332">7</text><text x="67" y="409">6</text><text x="67" y="487">5</text><text x="67" y="564">4</text><text x="67" y="642">3</text><text x="67" y="719">2</text><text x="67" y="797">1</text></g>
+    <g fill="#f2e6cd" text-anchor="end"><text x="135" y="797">a</text><text x="213" y="797">b</text><text x="291" y="797">c</text><text x="368" y="797">d</text><text x="446" y="797">e</text><text x="523" y="797">f</text><text x="601" y="797">g</text><text x="678" y="797">h</text></g>
+  </g>
+
+  <g font-family="Inter, Segoe UI, Arial, sans-serif">
+    <rect x="716" y="108" width="428" height="668" rx="20" fill="url(#panel)" stroke="#34443a" filter="url(#shadow)"/>
+    <text x="740" y="143" fill="#e2bf78" font-size="9" font-weight="800" letter-spacing="2">GAME ROOM</text>
+    <text x="740" y="171" fill="#f2eee5" font-family="Georgia, serif" font-size="23">Match details</text>
+    <rect x="1015" y="132" width="105" height="36" rx="10" fill="url(#gold)"/>
+    <text x="1028" y="155" fill="#302616" font-size="11" font-weight="800">＋ New game</text>
+
+    <rect x="738" y="188" width="384" height="43" rx="11" fill="#353b29" stroke="#685b3b"/>
+    <circle cx="758" cy="209" r="5.5" fill="#fffdf4"/>
+    <text x="774" y="213" fill="#e8e4da" font-size="12" font-weight="700">White to move</text>
+    <text x="1102" y="216" fill="#e2bf78" font-size="20">›</text>
+
+    <rect x="738" y="242" width="384" height="56" rx="12" fill="#1b251e" stroke="#718d75"/>
+    <rect x="750" y="252" width="36" height="36" rx="11" fill="#465345"/>
+    <text x="768" y="278" fill="#242b24" text-anchor="middle" font-size="26">♚</text>
+    <text x="798" y="265" fill="#f2eee5" font-size="12" font-weight="800">Black</text>
+    <rect x="835" y="251" width="70" height="17" rx="9" fill="#334331"/><text x="870" y="263" fill="#c8d8b8" text-anchor="middle" font-size="8" font-weight="800" letter-spacing=".7">COMPUTER</text>
+    <text x="798" y="285" fill="#849080" font-size="11">Normal level</text>
+    <rect x="1039" y="254" width="69" height="31" rx="9" fill="#19231c"/><text x="1073" y="274" fill="#aab2a8" text-anchor="middle" font-family="monospace" font-size="12">--:--</text>
+
+    <text x="740" y="323" fill="#d8d9d1" font-size="10" font-weight="800" letter-spacing="1.3">MOVE HISTORY</text>
+    <text x="1097" y="323" fill="#9da895" text-anchor="end" font-size="9">click a move to replay</text>
+    <rect x="738" y="333" width="384" height="194" rx="11" fill="#151e19" stroke="#303d33"/>
+    <text x="758" y="361" fill="#879282" font-size="11">Your moves will appear here</text>
+    <path d="M760 382h339" stroke="#29362d"/>
+
+    <rect x="738" y="539" width="384" height="56" rx="12" fill="#253128" stroke="#718d75"/>
+    <rect x="750" y="549" width="36" height="36" rx="11" fill="#fffdf4"/>
+    <text x="768" y="575" fill="#fffdf4" stroke="#43513f" stroke-width=".5" text-anchor="middle" font-size="26">♔</text>
+    <text x="798" y="562" fill="#f2eee5" font-size="12" font-weight="800">White</text>
+    <rect x="835" y="548" width="34" height="17" rx="9" fill="#334331"/><text x="852" y="560" fill="#c8d8b8" text-anchor="middle" font-size="8" font-weight="800" letter-spacing=".7">YOU</text>
+    <text x="798" y="582" fill="#849080" font-size="11">Ready to play</text>
+    <rect x="1039" y="551" width="69" height="31" rx="9" fill="#242d25"/><text x="1073" y="571" fill="#aab2a8" text-anchor="middle" font-family="monospace" font-size="12">--:--</text>
+
+    <text x="740" y="617" fill="#a9b0a5" font-size="8" font-weight="800" letter-spacing="1.3">GAME MODE</text>
+    <text x="938" y="617" fill="#a9b0a5" font-size="8" font-weight="800" letter-spacing="1.3">TIME CONTROL</text>
+    <rect x="738" y="624" width="185" height="35" rx="9" fill="#28342c" stroke="#3b493e"/><text x="751" y="646" fill="#e9e7de" font-size="10" font-weight="600">Play vs Computer</text><text x="905" y="647" fill="#a5aea4" font-size="12">⌄</text>
+    <rect x="937" y="624" width="185" height="35" rx="9" fill="#28342c" stroke="#3b493e"/><text x="950" y="646" fill="#e9e7de" font-size="10" font-weight="600">Unlimited</text><text x="1104" y="647" fill="#a5aea4" font-size="12">⌄</text>
+    <rect x="738" y="667" width="119" height="31" rx="9" fill="#28342c" stroke="#3b493e"/><text x="797" y="687" fill="#dce6d1" text-anchor="middle" font-size="9" font-weight="750">Sound: On</text>
+    <rect x="866" y="667" width="119" height="31" rx="9" fill="#28342c" stroke="#3b493e"/><text x="925" y="687" fill="#bdc4b9" text-anchor="middle" font-size="9" font-weight="750">Hint</text>
+    <rect x="994" y="667" width="128" height="31" rx="9" fill="#28342c" stroke="#3b493e"/><text x="1058" y="687" fill="#bdc4b9" text-anchor="middle" font-size="9" font-weight="750">PGN</text>
+    <rect x="738" y="706" width="185" height="32" rx="9" fill="#2a352e" stroke="#3b493e"/><text x="830" y="726" fill="#e9e7de" text-anchor="middle" font-size="10" font-weight="700">Undo</text>
+    <rect x="937" y="706" width="185" height="32" rx="9" fill="#2a352e" stroke="#3b493e"/><text x="1029" y="726" fill="#e9e7de" text-anchor="middle" font-size="10" font-weight="700">Flip board</text>
+  </g>
+</svg>
